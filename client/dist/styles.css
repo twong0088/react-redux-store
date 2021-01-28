@@ -1,0 +1,316 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+  font-weight: lighter;
+  font-size: xx-large;
+}
+
+button, #loginButton {
+  background-color: #26519E;
+  color: #FFFFFF;
+  transition-duration: 0.4s;
+  height: 35px;
+  border-radius: 4px;
+  margin-bottom: 2px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+button:hover, #loginButton:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #1e407e;
+}
+
+/* td {
+  vertical-align: middle;
+} */
+/* login page ========================== */
+#login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+p.login, #login-form {
+  text-align: center;
+}
+
+#email, #password {
+  width: 200px;
+}
+
+#loginButton {
+  width: 130px;
+}
+
+.errorMsg {
+  color: red;
+}
+
+span.switch {
+  cursor: pointer;
+}
+span.switch:hover {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* products page ================ */
+#header {
+  background-color: #26519E;
+  /* margin-bottom: 15px; */
+}
+
+#mainPage {
+  position:'relative';
+  z-index: 1;
+}
+
+#top-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px;
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+h1.storeName {
+  color: #FFFFFF;
+}
+
+#storeName {
+  cursor: pointer;
+}
+
+#categoryDropDown, #submitSearch, .logout {
+  height: 31px;
+}
+
+.logout {
+  background-color: #EFEFEF;
+  color: black;
+  width: 190px;
+}
+
+.logout:hover {
+  background-color: #d7d7d7;
+}
+/* #searchbar {
+  height: 30px;
+} */
+
+#searchTerm {
+  width: 500px;
+  height: 25px;
+}
+
+#categoryBar {
+  margin-left: 30px;
+  padding-bottom: 5px;
+}
+
+#categoryBar input {
+  margin-right: 30px;
+  height: 35px;
+  border: none;
+  outline: none;
+  font-size: medium;
+  background-color:#26519E;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+#categoryBar input:hover {
+  background-color: #1e407e;
+}
+
+#productsUI {
+  display: flex;
+  flex-direction: row;
+  /* margin-top: 30px; */
+}
+
+.selected {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+#cardsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 75vh;
+  width: 100%;
+  overflow-y: auto;
+  /* justify-content: center; */
+  /* border: 1px solid black; */
+}
+
+#productCards {
+  margin: 20px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+}
+
+#cartSideBar {
+  width: 450px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* border: 1px solid gray; */
+  box-shadow: 0 0 10px gray;
+}
+
+#cartDetails {
+  margin-left: 20px;
+  height: 57vh;
+  overflow-y: auto;
+}
+
+#checkout-subtotal {
+  height: 5vh;
+  margin-left: 20px;
+}
+
+#checkout-page-subtotal {
+  height: 5vh;
+}
+
+td{
+  text-align: left;
+  font-weight: 100;
+  width: 80px;
+  vertical-align: middle;
+}
+
+button.disabled {
+  opacity: 0.2;
+  pointer-events: none;
+  /* color: black; */
+}
+
+td.productName {
+  width: 200px;
+}
+
+/* modal ============================= */
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 1000;
+}
+
+#suggestionModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFF;
+  padding: 50px;
+  z-index: 1000;
+}
+
+/* checkout ======================== */
+#mainCheckout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#checkout-header {
+  background-color: #26519E;
+  width: 100%;
+}
+
+#errorMsg {
+  border: 1px solid red;
+}
+
+#checkout-top-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+table.checkout {
+  width: 500px;
+  table-layout: fixed;
+}
+
+input.checkout {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+table.creditCard {
+  width: 300px;
+  table-layout: fixed;
+}
+
+input.creditCard {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#creditCardForm {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+#finalReviewDetails {
+  height: 80vh;
+  overflow-y: scroll;
+}
+#finalCC {
+  padding-left: 50px;
+}
+
+#confirmation {
+  display: flex;
+  flex-direction: row;
+}
+
+#confirmationCartDetails {
+  height: 60vh;
+  overflow-y: scroll;
+}
+
+#confirmContainer {
+  margin-left: 15px;
+}
+
+#addressConfirm {
+  margin-left: 30px;
+}
+
+#addresses {
+  display: flex;
+  flex-direction: row;
+}
+
+.confirmHeader {
+  font-weight: bold;
+}
+
+#back-products {
+  margin-top: 20px;
+}
